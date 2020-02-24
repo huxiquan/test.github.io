@@ -35,7 +35,9 @@ make install
 export PYTHON_HOME=/root/training/Python-3.6.6  
 export PATH=$PYTHON_HOME/bin:$PATH  
 ###### 5.执行source ~/.bash_profile命令使配置生效 执行echo命令，查看是否配置成功，如图  
-![avatar](./static/linux.jpg )
+![avatar](./static/linux.jpg ) 
+###### 6. 同样根据执行的脚本文件所需要的第三方包,自行安装(pip3(apt-get) install 包名)
+###### 7.下载Linux系统的火狐与谷歌浏览器,并安装Selenium IDE插件(与windows平台类似,这里就不在介绍了)
 
 
 
