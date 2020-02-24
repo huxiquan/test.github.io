@@ -25,7 +25,7 @@
 #### 11.下载谷歌浏览器驱动,通样根据计算机自身谷歌浏览器版本下载对应的chromedriver  
 点击链接http://chromedriver.storage.googleapis.com/index.html，下载谷歌浏览器对应的文件(本机谷歌浏览器版本81.0,对应的chromedriver版本也为81.0)  
 复制文件到python的环境变量中(同步骤9),同样文件复制到chrome.exe所在目录  
-### 12.IE浏览器驱动的下载
+#### 12.IE浏览器驱动的下载
 
 ### 二、Linux平台
 #### 1.安装python环境
