@@ -16,12 +16,16 @@
 
 ![avatar](./static/chajian.jpg )   
 #### 9.安装火狐浏览器的驱动，下载Geckodriver结合计算机的版本及火狐浏览器的版本，下载对应的版本  
-点击链接https://github.com/mozilla/geckodriver/releases,(v0.26.0适用于Firefox≥60)，下载如下，并配置到python的环境变量中(将下载下来的GeckoDriver.exe放入python安装路径下的Scripts文件夹内) 
+点击链接https://github.com/mozilla/geckodriver/releases,(v0.26.0适用于Firefox≥60)，并配置到python的环境变量中(将下载下来的GeckoDriver.exe放入python安装路径下的Scripts文件夹内) 
 
 ![avatar](./static/qudong.jpg )  
 #### 10.下载成功后打开谷歌浏览器，点击右上角，选择更多工具》扩展程序，将下载好的文件拖到空白处，进行selenium IDE安装，如果安装成功，如下图，右上角会有selenium IDE安装成功的提示  
 
 ![avatar](./static/xianshi.jpg )  
+#### 11.下载谷歌浏览器驱动,通样根据计算机自身谷歌浏览器版本下载对应的chromedriver  
+点击链接http://chromedriver.storage.googleapis.com/index.html，下载谷歌浏览器对应的文件(本机谷歌浏览器版本81.0,对应的chromedriver版本也为81.0)  
+复制文件到python的环境变量中(同步骤9),同样文件复制到chrome.exe所在目录  
+### 12.IE浏览器驱动的下载
 
 ### 二、Linux平台
 #### 1.安装python环境
