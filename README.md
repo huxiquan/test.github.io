@@ -14,9 +14,12 @@
 #### 7.安装完成后,根据执行的脚本文件所需要的第三方包,自行安装(pip3 install 包名)
 #### 8.接下来我们下载最新版本的firefox(火狐浏览器)，安装成功后，打开火狐浏览器点击右上角菜单，选择web开发者，选择获取更多工具，点击selenium IDE，点击添加到firefox,如果是谷歌浏览器打开链接 (https://www.crx4chrome.com/crx/77585/)点击按钮下载selenium IDE (这是3.16.1版本)  
 
-![avatar](./static/chajian.jpg )  
+![avatar](./static/chajian.jpg )   
+#### 9.安装火狐浏览器的驱动，下载Geckodriver结合计算机的版本及火狐浏览器的版本，下载对应的版本  
+点击链接https://github.com/mozilla/geckodriver/releases,(v0.26.0适用于Firefox≥60)，下载如下，并配置到python的环境变量中(将下载下来的GeckoDriver.exe放入python安装路径下的Scripts文件夹内) 
 
-#### 9.下载成功后打开谷歌浏览器，点击右上角，选择更多工具》扩展程序，将下载好的文件拖到空白处，进行selenium IDE安装，如果安装成功，如下图，右上角会有selenium IDE安装成功的提示  
+![avatar](./static/qudong.jpg )  
+#### 10.下载成功后打开谷歌浏览器，点击右上角，选择更多工具》扩展程序，将下载好的文件拖到空白处，进行selenium IDE安装，如果安装成功，如下图，右上角会有selenium IDE安装成功的提示  
 
 ![avatar](./static/xianshi.jpg )  
 
