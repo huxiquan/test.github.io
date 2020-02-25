@@ -25,7 +25,7 @@
 #### 11.下载谷歌浏览器驱动,通样根据计算机自身谷歌浏览器版本下载对应的chromedriver  
 点击链接http://chromedriver.storage.googleapis.com/index.html，下载谷歌浏览器对应的文件(本机谷歌浏览器版本81.0,对应的chromedriver版本也为81.0)  
 复制文件到python的环境变量中(同步骤9),同样文件复制到chrome.exe所在目录  
-#### 12.IE浏览器驱动的下载（这里以win10与IE11为例）  
+#### 12.IE浏览器驱动的下载  
 1.下载IEDriverServer(http://dl.pconline.com.cn/download/771640-1.html)  
 2.解压缩得到IEDriverServer.exe和IEDriverServer.64.exe，其实只能用IEDriverServer.exe即可驱动IE11，并将其所复制到Python的安装目录下  
 3.针对windows vista和windows 7上的IE7或者更高的版本，必须在IE选项设置的安全页中，4个区域的启用保护模式的勾选都去掉（或都勾上），即保持四个区域的保护模式是一致的。如下图所示  
@@ -37,7 +37,7 @@
 如果是64位的windows，key值为HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\InternetExplorer\Main\FeatureControl\FEATURE_BFCACHE  
 如果key值不存在，就添加。之后在key内部创建一个iexplorer.exe，DWORD类型，值为0，我的windows是64位的，修改后的注册表如下图所示:  
 ![avatar](./static/huifu.jpg )  
-之后Selenium就可以正常打开ie浏览器
+之后Selenium就可以正常打开ie浏览器  
 #### 注：如果时间已久，以上网址如有访问不了请自行下载文件
 
 ### 二、Linux平台
@@ -57,7 +57,24 @@ export PATH=$PYTHON_HOME/bin:$PATH
 #### 5.执行source ~/.bash_profile命令使配置生效 执行echo命令，查看是否配置成功，如图  
 ![avatar](./static/linux.jpg ) 
 #### 6. 同样根据执行的脚本文件所需要的第三方包,自行安装(pip3(apt-get) install 包名)
-#### 7.下载Linux系统的火狐与谷歌浏览器,并安装Selenium IDE插件(与windows平台类似,这里就不在介绍了)
+#### 7.下载Linux系统的火狐与谷歌浏览器,并安装Selenium IDE插件(与windows平台类似,这里就不在介绍了)  
+#### 8.安装火狐浏览器驱动
+1.安装火狐 firefox  
+sudo yum install firefox  
+2.在(https://github.com/mozilla/geckodriver/releases)下载最新的geckodriver将压缩包移动到linux环境下(或者直接在linux下载压缩包)，并解压，进入文件所在目录执行(mv geckodriver /usr/bin)
+##### 注：如果报connect refuse 类似的错误，有可能是驱动不支持当前的浏览器版本或者是不支持selenium 版本，需要换个版本的驱动，0.21.0支持 firefox57以及更高版本 selenium 3.11（及更高版本）
+#### 9.安装谷歌浏览器驱动
+1.安装谷歌浏览器  
+对于64位版本可以使用如下链接下载：
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb  
+下载完后，运行如下命令安装。 sudo dpkg -i google-chrome*  sudo apt-get -f install
+然后，就可以去搜索使用了。
+2下载chromedriver  
+wget https://chromedriver.storage.googleapis.com/2.40/chromedriver_linux64.zip  
+3.解压chromedriver  
+unzip chromedriver_linux64.zip  
+4.移动chromedriver  
+mv chromedriver /usr/bin/
 
 
 
