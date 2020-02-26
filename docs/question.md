@@ -34,8 +34,8 @@
 #### 如何滚动
 > Selenium IDE中没有用于滚动的独特命令，因为Selenium中没有实现任何命令。取而代之的是，您可以使用scrollToJavaScript中的命令通过指定x和y协调要滚动到的位置来完成此任务.  
 >| 命令    |  目标  |  
->|  ----  | ----  |
->|executeScript|	window.scrollTo（0,1000） |
+>|  ----   | ----   |
+>|executeScript|window.scrollTo（0,1000） |
 #### 保存文件
 >##### 为什么我保存SIDE项目的位置不记得了？
 >##### 为什么每次要保存项目时都需要逐步执行“另存为”流程？
