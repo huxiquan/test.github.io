@@ -25,7 +25,11 @@
 #### 11.下载谷歌浏览器驱动,通样根据计算机自身谷歌浏览器版本下载对应的chromedriver  
 点击链接http://chromedriver.storage.googleapis.com/index.html，下载谷歌浏览器对应的文件(本机谷歌浏览器版本81.0,对应的chromedriver版本也为81.0)  
 复制文件到python的环境变量中(同步骤9),同样文件复制到chrome.exe所在目录  
+<<<<<<< HEAD
+#### 12.IE浏览器驱动的下载（这里以win10与IE11为例）  
+=======
 #### 12.IE浏览器驱动的下载  
+>>>>>>> 44737dc34fc1b4f94c22c5c4551c27cf5cebd704
 1.下载IEDriverServer(http://dl.pconline.com.cn/download/771640-1.html)  
 2.解压缩得到IEDriverServer.exe和IEDriverServer.64.exe，其实只能用IEDriverServer.exe即可驱动IE11，并将其所复制到Python的安装目录下  
 3.针对windows vista和windows 7上的IE7或者更高的版本，必须在IE选项设置的安全页中，4个区域的启用保护模式的勾选都去掉（或都勾上），即保持四个区域的保护模式是一致的。如下图所示  
@@ -37,7 +41,12 @@
 如果是64位的windows，key值为HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\InternetExplorer\Main\FeatureControl\FEATURE_BFCACHE  
 如果key值不存在，就添加。之后在key内部创建一个iexplorer.exe，DWORD类型，值为0，我的windows是64位的，修改后的注册表如下图所示:  
 ![avatar](./static/huifu.jpg )  
+<<<<<<< HEAD
+之后Selenium就可以正常打开ie浏览器
+
+=======
 之后Selenium就可以正常打开ie浏览器  
+>>>>>>> 44737dc34fc1b4f94c22c5c4551c27cf5cebd704
 #### 注：如果时间已久，以上网址如有访问不了请自行下载文件
 
 ### 二、Linux平台
