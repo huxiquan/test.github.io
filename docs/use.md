@@ -79,7 +79,7 @@
 ##### 参数  
 * text：完全匹配的字符串。正在支持模式匹配。有关详细信息，请参见[链接](https://github.com/SeleniumHQ/selenium-ide/issues/141)
 #### assert value
-确认输入字段的（空白修饰）值（或其他带有value参数的值）。对于复选框/无线电元素，根据是否选中该元素，其值为“ on”或“ off”。如果断言失败，则测试将停止
+确认输入字段的（空白修饰）值（或其他带有value参数的值）。对于复选框/单选元素，根据是否选中该元素，其值为“ on”或“ off”。如果断言失败，则测试将停止
 ##### 参数  
 * locator：元素定位器。  
 * text：完全匹配的字符串。正在支持模式匹配。有关详细信息，请参见[链接](https://github.com/SeleniumHQ/selenium-ide/issues/141)

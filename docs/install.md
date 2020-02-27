@@ -93,18 +93,17 @@ mv chromedriver /usr/bin/
 ### 三、MacOS平台
 
 #### 1.安装Python环境
-- 点击该链接<https://www.python.org/ftp/python/3.7.6/python-3.7.6-macosx10.6.pkg>，下载完成后得到一个python-3.7.6-macosx10.6.pkg安装包。  
-- 双击python-3.7.6-macosx10.6.pkg进入Python安装向导，若出现"身份不明"等问题，进入‘设置-->安全性与隐私-->通用’界面点击“仍要打开”，如下图所示：  
+点击该链接<https://www.python.org/ftp/python/3.7.6/python-3.7.6-macosx10.6.pkg>，下载完成后得到一个python-3.7.6-macosx10.6.pkg安装包。  
+双击python-3.7.6-macosx10.6.pkg进入Python安装向导，若出现"身份不明"等问题，进入‘设置-->安全性与隐私-->通用’界面点击“仍要打开”，如下图所示：  
 
-![avatar](./static/python_1.jpg )  
+![avatar](./static/python_4.png )  
 然后按照向导一步一步向下安装，一切保持默认即可。  
 
-![avatar](./static/python_2.jpg )  
-- 安装完成后按command+空格键进入聚焦搜索，输入‘terminal’回车进入终端，在终端中输入```python3 --version```命令即可查看Python版本。  
-- 在终端中输入
+安装完成后按command+空格键进入聚焦搜索，输入‘terminal’回车进入终端，在终端中输入```python3 --version```命令即可查看Python版本。  
+成功后接着在终端中输入
 ```curl https://bootstrap.pypa.io/get-pip.py | python3```
 安装pip
-- 完成后输入```pip3 --version```查看pip版本，安装成功。
+完成后输入```pip3 --version```查看pip版本，安装成功。
   
 #### 2.安装Python下的selenium执行环境
 在终端（terminal）中输入```python3 -m pip install selenium```，如下图所示：  
@@ -114,25 +113,25 @@ mv chromedriver /usr/bin/
 再根据执行脚本自行安装所需第三方包，使用```pip3 install 包名```命令即可安装。
 
 #### 3.安装火狐浏览器(Firefox)IDE
-- 下载最新版本的火狐浏览器  
-- 打开<https://addons.mozilla.org/en-US/firefox/addon/selenium-ide/>进入页面
-- 点击右侧菜单，打开web开发者-->获取更多工具，然后在搜索框中搜索‘selenium’，点击‘Selenium IDE’一项进入页面，点击“+ 添加到FireFox”后依据步骤选择确定即可。  
-![avatar](./static/firefox_5.jpg )  
-![avatar](./static/firefox_2.jpg )  
-![avatar](./static/firefox_3.jpg )  
-![avatar](./static/firefox_4.jpg )  
+下载最新版本的火狐浏览器  
+打开<https://addons.mozilla.org/en-US/firefox/addon/selenium-ide/>进入页面
+- 点击右侧菜单，打开web开发者-->获取更多工具    
+![avatar](./static/firefox_6.png )  
+
+![avatar](./static/firefox_7.png )  
+然后在搜索框中搜索‘selenium’，点击‘Selenium IDE’一项进入页面，点击“+ 添加到FireFox”后依据步骤选择确定即可。  
 
 #### 4.安装火狐浏览器(Firefox)驱动
-- 点击进入<https://github.com/mozilla/geckodriver/releases>  
-- 选择对应版本的压缩包点击下载，注意为macos标识
+点击进入<https://github.com/mozilla/geckodriver/releases>  
+选择对应版本的压缩包点击下载，注意为macos标识  
 ![avatar](./static/firefox_1.jpg )  
-- 解压下载好的文件geckodriver，使用 ```sudo mv 文件路径 /usr/local/bin```将下载好的可执行文件移动到/usr/local/bin目录中，输入管理员密码运行。  
+解压下载好的文件geckodriver，使用 ```sudo mv 文件路径 /usr/local/bin```将下载好的可执行文件移动到/usr/local/bin目录中，输入管理员密码运行。  
 
 
 
 #### 5.安装谷歌浏览器(Chrome)IDE
-- 打开<https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd>进入页面  
-- 点击“添加至Chrome”后依据步骤选择确定即可。  
+打开<https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd>进入页面  
+点击“添加至Chrome”后依据步骤选择确定即可。  
 
 
 
@@ -140,20 +139,21 @@ mv chromedriver /usr/bin/
 
 #### 6.安装谷歌浏览器(Chrome)驱动
 
-- 首先查看自己的Chrome版本，点击浏览器右侧菜单-->设置-->关于Chrome，查看版本号。  
+首先查看自己的Chrome版本，点击浏览器右侧菜单-->设置-->关于Chrome，查看版本号。  
 ![avatar](./static/chrome_1.jpg )  
 
-- 进入<https://sites.google.com/a/chromium.org/chromedriver/downloads>页面，选择与自己浏览器对应的版本点击下载，注意选择mac版本。  
+进入<https://sites.google.com/a/chromium.org/chromedriver/downloads>页面，选择与自己浏览器对应的版本点击下载，注意选择mac版本。  
 ![avatar](./static/chrome_2.jpg )  
+
 ![avatar](./static/chrome_4.jpg )  
-- 解压下载好的文件chromedriver，进入终端使用 ```sudo mv 文件路径 /usr/local/bin```命令将下载好的可执行文件移动到/usr/local/bin目录中，输入管理员密码运行。  
+解压下载好的文件chromedriver，进入终端使用 ```sudo mv 文件路径 /usr/local/bin```命令将下载好的可执行文件移动到/usr/local/bin目录中，输入管理员密码运行。  
 
 
 #### 7.配置苹果浏览器(Safari)
-- 检查菜单栏有无“开发”选项，没有的话进入Safari浏览器-->偏好设置-->高级，勾选“在菜单栏中显示‘开发’菜单”选项。  
+检查菜单栏有无“开发”选项，没有的话进入Safari浏览器-->偏好设置-->高级，勾选“在菜单栏中显示‘开发’菜单”选项。  
 
-![avatar](./static/safari_1.jpg )
+![avatar](./static/safari_5.png )
 
-- 选中开发选项，在下拉项中勾选“允许远程自动化”即可。
+选中开发选项，在下拉项中勾选“允许远程自动化”即可。
 
-![avatar](./static/safari_3.jpg )  
+![avatar](./static/safari_4.png )  
