@@ -45,8 +45,7 @@
 5.调整浏览器的缩放比例必须设置为100%，这样元素定位才不会出现问题  
 6.针对IE11，需要修改注册表。如果是32位的windows，key值为HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\InternetExplorer\Main\FeatureControl\FEATURE_BFCACHE  
 如果是64位的windows，key值为HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\InternetExplorer\Main\FeatureControl\FEATURE_BFCACHE  
-如果key值不存在，就添加。之后在key内部创建一个iexplorer.exe，DWORD类型，值为0，我的windows是64位的，修改后的注册表如下图所示:  
-![avatar](./static/huifu.jpg )  
+如果key值不存在，就添加。之后在key内部创建一个iexplorer.exe，DWORD类型，值为0  
 之后Selenium就可以正常打开ie浏览器  
 #### 注：如果时间已久，以上网址如有访问不了请自行下载文件
 
