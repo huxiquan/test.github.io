@@ -1,3 +1,3 @@
-# Python + Selenium IDE自动化测试教程
+# AutoTCG专业版自动化测试教程
 
 
