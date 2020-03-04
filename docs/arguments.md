@@ -1,4 +1,4 @@
-### Selenium IDE 命令相关参数
+### AutoTCG专业版命令相关参数
 #### alertText
 - 名称：提示文本  
 - 描述：要检查的文本。  

@@ -1,5 +1,5 @@
 * [首页](/)
 * [安装配置](install)
-* [SeleniumIDE的命令使用](use)
+* [AutoTCG专业版的命令使用](use)
 * [参数说明](arguments)
-* [SeleniumIDE的常见问题](question)
+* [AutoTCG专业版的常见问题](question)

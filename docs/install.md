@@ -1,4 +1,4 @@
-## Python+Selenium IDE自动化测试环境的搭建
+## AutoTCG专业版自动化测试环境的搭建
 ### 一、Windows平台
 #### 1.百度搜索Python
 在浏览器(建议使用谷歌浏览器，自带翻译功能)中百度搜索python进入python官网，点击Downloads(下载)选择Windows平台(如下图所示)  
